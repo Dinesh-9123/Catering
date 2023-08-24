@@ -42,7 +42,7 @@ const http = require("http");
 //   debug("Listening on " + bind);
 // };
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const server = http.createServer(app);
 // server.on("error", onError);
